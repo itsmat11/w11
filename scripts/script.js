@@ -48,3 +48,10 @@ function populateList(myShoppingList) {
 let shoppingList = ["bread", "cheese", "green pepper"];
 
 populateList(shoppingList)
+
+
+function squarelist() {
+    const ulElement = document.querySelector("ul.shopping")
+    ulElement.classList.remove("circleList")
+    ulElement.classList.add("squareList")
+}
