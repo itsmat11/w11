@@ -1,16 +1,28 @@
-// function greet(name) {
+// function greet(name, time = "day") {
+//     console.log(`Good ${time} ${name}!`);
+// }
+// greet("Matt", "night");
+
+
+// let greet = function(name) {
 //     console.log("Hello " + name + "!");
 // }
-// greet("Matt");
+// greet("Matt")
 
-
-// let hah = function(name) {
+// const greet = (name) => {
 //     console.log("Hello " + name + "!");
 // }
-// hah("Matt")
 
-const hah = (name) => {
-    console.log("Hello " + name + "!");
+// greet("Matt")
+
+function area(radius){
+    if (isNaN(radius))
+    {
+        alert("This is not a number");
+    } else {
+        return Math.PI * radius * radius
+    }
+
 }
-
-greet("Matt")
+radius = prompt("Enter radius of circle: ")
+console.log(`The area of a circle with radius ${radius} is ${area(radius)}`)
