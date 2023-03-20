@@ -15,14 +15,36 @@
 
 // greet("Matt")
 
-function area(radius){
-    if (isNaN(radius))
-    {
-        alert("This is not a number");
-    } else {
-        return Math.PI * radius * radius
-    }
+// function area(radius){
+//     const radiusPara = document.querySelector("#radius");
+//     console.log(radiusPara)
+//     const areaPara = document.querySelector("#restart")
+//     console.log(areaPara)
 
+//     if (isNaN(radius)) 
+//     {
+//         radiusPara.textcontent = "This is not a number"
+//         alert("This is not a number");
+//     } else {
+//         let area = Math.PI * radius * radius
+//         return area.toFixed(2)
+//     }
+
+// }
+// radius = prompt("Enter radius of circle: ")
+// console.log(`The area of a circle with radius ${radius} is ${area(radius)}`)
+
+function populateList(myShoppingList) {
+    const ulElement = document.querySelector("ul.shopping")
+    // console.log(ulElement)
+    for(let item of myShoppingList) {
+        // console.log(item)
+        let newLi = document.createElement("li")
+        newLi.textContent = item
+        ulElement.appendChild(newLi)
+    }
 }
-radius = prompt("Enter radius of circle: ")
-console.log(`The area of a circle with radius ${radius} is ${area(radius)}`)
+
+let shoppingList = ["bread", "cheese", "green pepper"];
+
+populateList(shoppingList)
