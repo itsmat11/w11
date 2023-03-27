@@ -55,3 +55,10 @@ function squarelist() {
     ulElement.classList.remove("circleList")
     ulElement.classList.add("squareList")
 }
+squarelist();
+
+function updateImage(){
+    const image = document.querySelector("#shoppingCart");
+    image.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/263/263142.png");
+}
+updateImage();
