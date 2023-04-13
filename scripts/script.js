@@ -37,7 +37,7 @@
 function populateList(myShoppingList) {
     const ulElement = document.querySelector("ul.shopping")
     // console.log(ulElement)
-    for(let item of myShoppingList) {
+    for (let item of myShoppingList) {
         // console.log(item)
         let newLi = document.createElement("li")
         newLi.textContent = item
@@ -57,8 +57,21 @@ function squarelist() {
 }
 squarelist();
 
-function updateImage(){
+function updateImage() {
     const image = document.querySelector("#shoppingCart");
     image.setAttribute("src", "https://cdn-icons-png.flaticon.com/512/263/263142.png");
+    image.setAttribute("widthh", 50);
+    image.setAttribute("height", 50);
 }
 updateImage();
+
+function changeListgreen() {
+    const listItems = document.querySelectorAll("li")
+    for (let item of listItems) {
+        if (item.textContent.includes("green")) {
+            item.classList.add("greenItem")
+
+        }
+    }
+}
+changeListgreen(); 
